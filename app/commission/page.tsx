@@ -5,25 +5,25 @@ const Page = () => {
     const commissions = [
         {
             title: "Sketch",
-            img: "/arts/MichiruRaiDoodle_sketch.png",
+            img: "/arts/michiru_rai.png",
             desc: "Base sketch",
             price: 17
         },
         {
             title: "Lineart",
-            img: "/arts/konohadoodleposelineart.png",
+            img: "/arts/konoha_commissionsample.png",
             desc: "Lineart with base color",
             price: 35
         },
         {
             title: "Flat Color",
-            img: "/arts/MarieLargeCoat_update.png",
+            img: "/arts/marie_commissionsample.png",
             desc: "Flat-colored artwork",
             price: 55
         },
         {
             title: "Rendered",
-            img: "/arts/ReikoWithBag.png",
+            img: "/arts/reiko_commissionsample.png",
             desc: "Fully-rendered artwork",
             price: 70
         }
@@ -44,13 +44,13 @@ const Page = () => {
                     commissions.map((item, index) =>
                         <div className="overflow-hidden max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700" style={{ width: "300px" }} key={index}>
                             <a href="#" className='object-cover'>
-                                <Image src={item.img} width={300} height={500} alt='comm'></Image>
+                                <Image src={item.img} width={800} height={700} alt='comm'></Image>
                             </a>
                             <div className="px-5 py-5">
                                 <a href="#">
                                     <h5 className="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">{item.title}</h5>
                                 </a>
-                                <div className="flex items-center justify-between">
+                                <div className="flex items-center justify-between" style={{ background: "-webkit-linear-gradient(#e89,#74d)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>
                                     <span className="text-3xl font-bold text-gray-900 dark:text-white">{formatPrice.format(item.price)}</span>
                                 </div>
                             </div>
@@ -58,9 +58,11 @@ const Page = () => {
                 }
             </div>
             <div className="container text-center m-5">
-                <button className='btn p-3 rounded-lg bg-gradient-to-r from-indigo-300 to-red-300 text-black hover:ring-2 hover:ring-blue-200'>
-                    Terms and Conditions
-                </button>
+                <a href="/commission/terms">
+                    <button className='btn p-3 rounded-lg bg-gradient-to-r from-indigo-300 to-red-300 text-black hover:ring-2 hover:ring-blue-200'>
+                        Terms and Conditions
+                    </button>
+                </a>
             </div>
         </div>
     )

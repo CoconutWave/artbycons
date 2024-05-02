@@ -2,7 +2,12 @@ import React from 'react'
 
 const Page = () => {
     return (
-        <div className='container p-20'>
+        <div className='container px-20 py-5'>
+            <div className="container py-5">
+                <a href="/commission">
+                    <div className="text-xl">back</div>
+                </a>
+            </div>
             <div className="p-2">
                 <div className="text-2xl">Terms</div>
                 <div className="text-xl container">

@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 const Page = () => {
@@ -14,21 +15,19 @@ const Page = () => {
             platformName: "Bluesky",
             handler: "@artbycons.bsky.app",
             url: "https://bsky.app/profile/artbycons.bsky.social",
-            svg: <svg xmlns="http://www.w3.org/2000/svg" width={50} height={50} viewBox="0 0 50 50" version="1.1" >
-                <path d="m135.72 44.03c66.496 49.921 138.02 151.14 164.28 205.46 26.262-54.316 97.782-155.54 164.28-205.46 47.98-36.021 125.72-63.892 125.72 24.795 0 17.712-10.155 148.79-16.111 170.07-20.703 73.984-96.144 92.854-163.25 81.433 117.3 19.964 147.14 86.092 82.697 152.22-122.39 125.59-175.91-31.511-189.63-71.766-2.514-7.3797-3.6904-10.832-3.7077-7.8964-0.0174-2.9357-1.1937 0.51669-3.7077 7.8964-13.714 40.255-67.233 197.36-189.63 71.766-64.444-66.128-34.605-132.26 82.697-152.22-67.108 11.421-142.55-7.4491-163.25-81.433-5.9562-21.282-16.111-152.36-16.111-170.07 0-88.687 77.742-60.816 125.72-24.795z" fill="#1185fe" />
-            </svg >
+            svg: <Image src={"https://upload.wikimedia.org/wikipedia/commons/7/7a/Bluesky_Logo.svg"} alt='bluesky' width={50} height={50}></Image>
         },
         {
             platformName: "Ko-Fi",
             handler: "artbycons",
             url: "https://ko-fi.com/artbycons",
-            svg: <img src='/kofi-svgrepo-com.svg' width={50} style={{ fill: "white" }} />
+            svg: <img src='/kofi-svgrepo-com.svg' width={50} height={50} style={{ fill: "white" }} />
         },
         {
             platformName: "DeviantArt",
             handler: "PwnageSpartan",
             url: "https://www.deviantart.com/pwnagespartan",
-            svg: <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 50 50" fill='white'>
+            svg: <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 50 50" fill='white' >
                 <path d="M 37 5 L 28.898438 5 L 25.199219 12 L 12 12 L 12 22 L 19.898438 22 L 12 37 L 12 45 L 20 45 L 23.699219 38 L 37 38 L 37 28 L 29 28 L 37 13 Z"></path>
             </svg>
         },
@@ -62,7 +61,7 @@ const Page = () => {
                                 <a href={item.url} className="inline-flex font-medium items-center text-blue-600 hover:underline">
                                     Visit
                                     <svg className="w-3 h-3 ms-2.5 rtl:rotate-[270deg]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778" />
+                                        <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778" />
                                     </svg>
                                 </a>
                             </div>

@@ -22,6 +22,10 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-between">
       <div className="container relative bg-rose-800 h-80">
         <Image src={"/arts/ReikoWIthBag.png"} fill style={{ objectFit: "cover" }} alt="banner"></Image>
+        <div className="absolute bg-gray-700 opacity-60 inset-0"></div>
+        <div className="absolute inset-0 flex justify-center items-center">
+          <div className="text-white text-2xl drop-shadow-xl">art by Cons</div>
+        </div>
       </div>
 
       <div className="container w-100 bg-gradient-to-r from-violet-600 to-fuchsia-200 p-20">
