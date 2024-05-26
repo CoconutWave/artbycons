@@ -62,7 +62,7 @@ const Page = () => {
           {contacts.map((item, index) => (
             <Link
               href={item.url}
-              className="flex gap-5 m-3 p-6 hover:scale-105 transition items-center max-w-m bg-white border border-gray-800 rounded-lg shadow dark:bg-gray-900 dark:border-gray-700 hover:bg-gray-700"
+              className="block md:flex gap-5 m-3 p-6 hover:scale-105 transition items-center max-w-m bg-white border border-gray-800 rounded-lg shadow dark:bg-gray-900 dark:border-gray-700 hover:bg-gray-700"
               key={index}
             >
               {item.svg != null && item.svg}

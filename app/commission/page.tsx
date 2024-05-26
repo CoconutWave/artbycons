@@ -34,16 +34,16 @@ const Page = () => {
     currency: "USD",
   });
   return (
-    <div className="w-full px-20 py-5">
+    <div className="w-full px-10 py-5">
       <div className="container text-center justify-center my-3">
         <h1 className="text-3xl">Commission</h1>
         <p>Please contact me for more details.</p>
       </div>
 
-      <div className="grid xl:grid-cols-4 lg:grid-cols-2 grid-cols-1">
+      <div className="grid xl:grid-cols-4 lg:grid-cols-2 grid-cols-1 w-full bgcol">
         {commissions.map((item, index) => (
           <div
-            className="overflow-hidden max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+            className="overflow-hidden m-3 max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
             style={{ width: "300px", height: "500px" }}
             key={index}
           >
