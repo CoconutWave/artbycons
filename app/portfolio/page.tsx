@@ -31,7 +31,7 @@ const Page = () => {
           return (
             <div
               key={index}
-              className="overflow-hidden max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-700"
+              className="overflow-hidden max-w-sm hover:scale-105 transition bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-700"
             >
               <a href="#">
                 <Image src={item.img} width={700} height={700} alt="artimage" />

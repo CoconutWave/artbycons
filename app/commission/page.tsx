@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { FaPeopleGroup } from "react-icons/fa6";
+import { MdImage } from "react-icons/md";
 
 const Page = () => {
   const commissions = [
@@ -29,6 +31,20 @@ const Page = () => {
       price: 70,
     },
   ];
+
+  const additionalFeatures = [
+    {
+      title: "Background",
+      icon: <MdImage></MdImage>,
+      price: 25,
+    },
+    {
+      title: "Multiple Characters",
+      icon: <FaPeopleGroup></FaPeopleGroup>,
+      price: 15,
+    },
+  ];
+
   const formatPrice = Intl.NumberFormat("en-US", {
     style: "currency",
     currency: "USD",
@@ -37,14 +53,14 @@ const Page = () => {
     <div className="w-full px-10 py-5">
       <div className="container text-center justify-center my-3">
         <h1 className="text-3xl">Commission</h1>
-        <p>Please contact me for more details.</p>
+        <p>Multiple art commission varieties available.</p>
       </div>
 
       <div className="grid xl:grid-cols-4 lg:grid-cols-2 grid-cols-1 w-full bgcol">
         {commissions.map((item, index) => (
           <div
-            className="overflow-hidden m-3 max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
-            style={{ width: "300px", height: "500px" }}
+            className="overflow-hidden m-3 max-w-sm bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-700 hover:scale-105 transition dark:bg-gray-800 dark:border-gray-700"
+            style={{ width: "300px", height: "512px" }}
             key={index}
           >
             {/* <Link href="#" className="">
@@ -59,6 +75,7 @@ const Page = () => {
                   {item.title}
                 </h5>
               </a>
+              <div className="text-gray-300">{item.desc}</div>
               <div
                 className="flex items-center justify-between"
                 style={{
@@ -74,6 +91,37 @@ const Page = () => {
             </div>
           </div>
         ))}
+      </div>
+      <div className="container m-5 grid grid-cols-1 md:grid-cols-4">
+        {additionalFeatures.map((item, index) => (
+          <div
+            className="overflow-hidden flex m-3 max-w-sm bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-700 hover:scale-105 transition dark:bg-gray-800 dark:border-gray-700"
+            key={index}
+          >
+            <div className="py-10 pl-5 text-3xl">{item.icon}</div>
+            <div className="px-5 py-5 ">
+              <h5 className="text-xl font-semibold tracking-tight  text-gray-900 dark:text-white">
+                {item.title}
+              </h5>
+
+              <div
+                className="flex items-center justify-between"
+                style={{
+                  background: "-webkit-linear-gradient(#f89,#b7d)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                }}
+              >
+                <span className="text-3xl font-bold text-gray-900 dark:text-white">
+                  {formatPrice.format(item.price)}
+                </span>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+      <div className="container text-center m-5">
+        Please contact me to check for available slot.
       </div>
       <div className="container text-center m-5">
         <a href="/commission/terms">

@@ -41,6 +41,32 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <div className="w-full bg-slate-900 block md:flex">
+        <div className="relative bg-cyan-600 w-full md:w-1/2 h-80">
+          <Image
+            src={
+              "https://d.furaffinity.net/art/pwnagespartan/1683901045/1683890787.pwnagespartan_seradoingchores_update.png"
+            }
+            fill
+            objectFit="cover"
+            objectPosition="50% 10%"
+            alt="sample"
+          ></Image>
+        </div>
+        <div className="container p-10 text-center md:text-left">
+          <div className="text-2xl mb-5">
+            I make anthropomorphic character illustrations. Capable to draw
+            various animals within my interest. I&apos;ve made a lot of
+            illustrations.
+          </div>
+          <Link
+            href={"/portfolio"}
+            className="bg-fuchsia-300 text-black p-3 rounded-xl"
+          >
+            Check my portfolio
+          </Link>
+        </div>
+      </div>
 
       <div className="w-full bg-gradient-to-r from-violet-600 to-fuchsia-200 p-20">
         <div className="card justify-around grid md:grid-cols-3 sm:grid-cols-2 xs:grid-cols-1">
@@ -48,7 +74,7 @@ export default function Home() {
             <Link
               key={index}
               href={item.link}
-              className="block m-3 max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
+              className="block m-3 max-w-sm p-6 hover:scale-105 transition transition-transform bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
             >
               <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                 {item.title}

@@ -57,7 +57,7 @@ const Page = () => {
         </p>
       </div>
       <div className="container p-2 mb-10">
-        <h1 className="text-2xl mb-2">Contacts</h1>
+        <h1 className="text-2xl mb-2">Contact me</h1>
         <div className="container sm:block lg:grid grid-cols-3">
           {contacts.map((item, index) => (
             <Link
