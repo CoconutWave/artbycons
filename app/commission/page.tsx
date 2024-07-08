@@ -56,70 +56,75 @@ const Page = () => {
         <p>Multiple art commission varieties available.</p>
       </div>
 
-      <div className="grid xl:grid-cols-4 lg:grid-cols-2 grid-cols-1 w-full bgcol">
-        {commissions.map((item, index) => (
-          <div
-            className="overflow-hidden m-3 max-w-sm bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-700 hover:scale-105 transition dark:bg-gray-800 dark:border-gray-700"
-            style={{ width: "300px", height: "512px" }}
-            key={index}
-          >
-            {/* <Link href="#" className="">
+      <div className="p-5">
+        <div className="text-3xl">Commission Type</div>
+        <div className="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 xs:grid-cols-1 w-full bgcol">
+          {commissions.map((item, index) => (
+            <div
+              className="overflow-hidden m-3 max-w-sm bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-700 hover:scale-105 transition dark:bg-gray-800 dark:border-gray-700"
+              style={{ width: "300px", height: "512px" }}
+              key={index}
+            >
+              {/* <Link href="#" className="">
               <Image src={item.img} height={300} width={300} alt="comm"></Image>
             </Link> */}
-            <div className="relative w-full h-96 bg-slate-500">
-              <Image src={item.img} fill objectFit="cover" alt="comm"></Image>
+              <div className="relative w-full h-96 bg-slate-500">
+                <Image src={item.img} fill objectFit="cover" alt="comm"></Image>
+              </div>
+              <div className="px-5 py-5">
+                <a href="#">
+                  <h5 className="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
+                    {item.title}
+                  </h5>
+                </a>
+                <div className="text-gray-300">{item.desc}</div>
+                <div
+                  className="flex items-center justify-between"
+                  style={{
+                    background: "-webkit-linear-gradient(#f89,#c8e)",
+                    WebkitBackgroundClip: "text",
+                    WebkitTextFillColor: "transparent",
+                  }}
+                >
+                  <span className="text-3xl font-bold text-gray-900 dark:text-white">
+                    {formatPrice.format(item.price)}
+                  </span>
+                </div>
+              </div>
             </div>
-            <div className="px-5 py-5">
-              <a href="#">
-                <h5 className="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
+          ))}
+        </div>
+        <div className="text-3xl mt-5">Additional Stuffs</div>
+        <div className="container grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
+          {additionalFeatures.map((item, index) => (
+            <div
+              className="overflow-hidden flex m-3 max-w-sm bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-700 hover:scale-105 transition dark:bg-gray-800 dark:border-gray-700"
+              key={index}
+            >
+              <div className="py-10 pl-5 text-3xl">{item.icon}</div>
+              <div className="px-5 py-5 ">
+                <h5 className="text-xl font-semibold tracking-tight  text-gray-900 dark:text-white">
                   {item.title}
                 </h5>
-              </a>
-              <div className="text-gray-300">{item.desc}</div>
-              <div
-                className="flex items-center justify-between"
-                style={{
-                  background: "-webkit-linear-gradient(#f89,#b7d)",
-                  WebkitBackgroundClip: "text",
-                  WebkitTextFillColor: "transparent",
-                }}
-              >
-                <span className="text-3xl font-bold text-gray-900 dark:text-white">
-                  {formatPrice.format(item.price)}
-                </span>
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
-      <div className="container m-5 grid grid-cols-1 md:grid-cols-4">
-        {additionalFeatures.map((item, index) => (
-          <div
-            className="overflow-hidden flex m-3 max-w-sm bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-700 hover:scale-105 transition dark:bg-gray-800 dark:border-gray-700"
-            key={index}
-          >
-            <div className="py-10 pl-5 text-3xl">{item.icon}</div>
-            <div className="px-5 py-5 ">
-              <h5 className="text-xl font-semibold tracking-tight  text-gray-900 dark:text-white">
-                {item.title}
-              </h5>
 
-              <div
-                className="flex items-center justify-between"
-                style={{
-                  background: "-webkit-linear-gradient(#f89,#b7d)",
-                  WebkitBackgroundClip: "text",
-                  WebkitTextFillColor: "transparent",
-                }}
-              >
-                <span className="text-3xl font-bold text-gray-900 dark:text-white">
-                  {formatPrice.format(item.price)}
-                </span>
+                <div
+                  className="flex items-center justify-between"
+                  style={{
+                    background: "-webkit-linear-gradient(#f89,#b7d)",
+                    WebkitBackgroundClip: "text",
+                    WebkitTextFillColor: "transparent",
+                  }}
+                >
+                  <span className="text-3xl font-bold text-gray-900 dark:text-white">
+                    {formatPrice.format(item.price)}
+                  </span>
+                </div>
               </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
+
       <div className="container text-center m-5">
         Please contact me to check for available slot.
       </div>

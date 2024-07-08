@@ -18,6 +18,11 @@ const Page = () => {
       img: "https://d.furaffinity.net/art/pwnagespartan/1713181296/1713181296.pwnagespartan_zhenskadoosh.png",
       desc: "The new guardian of the Valley of Peace",
     },
+    {
+      title: "Konoha",
+      img: "https://d.furaffinity.net/art/pwnagespartan/1680188192/1680188192.pwnagespartan_konohaclothes.png",
+      desc: "Konoha-chan rocking her sweater",
+    },
   ];
   return (
     <div className="container px-20 py-5">
