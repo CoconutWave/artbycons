@@ -23,20 +23,25 @@ const Page = () => {
       img: "https://d.furaffinity.net/art/pwnagespartan/1680188192/1680188192.pwnagespartan_konohaclothes.png",
       desc: "Konoha-chan rocking her sweater",
     },
+    {
+      title: "Diane",
+      img: "https://d.furaffinity.net/art/pwnagespartan/1730821373/1730821373.pwnagespartan_dianefoxington.png",
+      desc: "The thief in disguise"
+    }
   ];
   return (
-    <div className="container px-20 py-5">
-      <div className="container w-100 text-center justify-center my-3">
+    <div className="w-full px-10 md:px-20 py-5">
+      <div className="w-100 text-center justify-center mb-10">
         <h1 className="text-3xl">Portfolio</h1>
         <p>Personal and commissioned works.</p>
       </div>
 
-      <div className="grid md:grid-cols-5 sm:grid-cols-2 gap-10">
+      <div className="grid xs:block sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 ">
         {portfolio.map((item, index) => {
           return (
             <div
               key={index}
-              className="overflow-hidden max-w-sm hover:scale-105 transition bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-700"
+              className="overflow-hidden mx-auto max-w-sm hover:scale-105 transition bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-900 dark:border-gray-700 hover:bg-gray-800"
             >
               <a href="#">
                 <Image src={item.img} width={700} height={700} alt="artimage" />

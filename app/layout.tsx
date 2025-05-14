@@ -18,7 +18,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={raleway.className}>
+      <body
+        className={
+          raleway.className + " flex flex-col h-screen justify-between"
+        }
+      >
         <Navbar></Navbar>
         {children}
         <Footer></Footer>

@@ -39,9 +39,9 @@ const Page = () => {
     },
   ];
   return (
-    <div className="w-full p-20">
-      <div className="w-full p-2 mb-10 text-center">
-        <div className="w-full flex justify-center">
+    <div className="p-20 flex flex-col justify-center">
+      <div className="w-full p-2 text-center">
+        <div className="w-96 flex justify-center mx-auto">
           <Image
             className="rounded-full border-l-slate-800 border drop-shadow-2xl"
             src={"/arts/sisu_square.png"}
@@ -50,30 +50,33 @@ const Page = () => {
             alt="profile"
           ></Image>
         </div>
-        <h1 className="text-2xl my-3">art by Cons</h1>
-        <p>
-          A digital artist based in Indonesia. Specialized in anthropomorphic
-          arts and illustration, character design, and digital painting.
-        </p>
+        <div className="w-5/6 md:w-1/2 mx-auto m-3">
+          <h1 className="text-5xl mb-5">art by Cons</h1>
+          <p className="text-2xl">
+            A digital artist based in Indonesia. Specialized in anthropomorphic
+            arts and illustration, character design, and digital painting.
+          </p>
+        </div>
       </div>
-      <div className="container p-2 mb-10">
+      <div className="w-full p-5">
         <h1 className="text-2xl mb-2">Contact me</h1>
-        <div className="container sm:block lg:grid grid-cols-3">
+        <div className="grid xs:block grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
           {contacts.map((item, index) => (
             <Link
               href={item.url}
-              className="block md:flex gap-5 m-3 p-6 hover:scale-105 transition items-center max-w-m bg-white border border-gray-800 rounded-lg shadow dark:bg-gray-900 dark:border-gray-700 hover:bg-gray-700"
+              className="flex gap-5 m-3 md:p-5 sm:p-3 p-3 hover:scale-105 overflow-hidden transition items-center bg-white border border-gray-800 rounded-lg shadow dark:bg-gray-900 dark:border-gray-700 hover:bg-gray-700"
               key={index}
             >
-              {item.svg != null && item.svg}
+              <div className="inline-flex">
+                {item.svg != null && item.svg}
+              </div>
               <div>
-                <h5 className="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
+                <h5 className="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
                   {item.platformName}
                 </h5>
               </div>
               {/* <p className="mb-3 font-normal text-gray-500 dark:text-gray-400">Go to this step by step guideline process on how to certify for your weekly benefits:</p> */}
-              <div className="inline-flex font-medium items-center text-blue-600">
-                Visit
+              <div className="inline-flex font-medium items-center">
                 <svg
                   className="w-3 h-3 ms-2.5 rtl:rotate-[270deg]"
                   aria-hidden="true"

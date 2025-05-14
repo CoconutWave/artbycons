@@ -50,8 +50,8 @@ const Page = () => {
     currency: "USD",
   });
   return (
-    <div className="w-full px-10 py-5">
-      <div className="container text-center justify-center my-3">
+    <div className="w-full px-10 md:px-20 py-5">
+      <div className="w-100 text-center justify-center mb-10">
         <h1 className="text-3xl">Commission</h1>
         <p>Multiple art commission varieties available.</p>
       </div>
@@ -125,16 +125,17 @@ const Page = () => {
         </div>
       </div>
 
-      <div className="container text-center m-5">
-        Please contact me to check for available slot.
-      </div>
-      <div className="container text-center m-5">
+      <div className="text-center m-5">
+        <p>Please contact me to check for available slot.</p>
+        <div className="text-center m-5">
         <a href="/commission/terms">
           <button className="btn p-3 rounded-lg bg-gradient-to-r from-indigo-300 to-red-300 text-black hover:ring-2 hover:ring-blue-200">
             Terms and Conditions
           </button>
         </a>
       </div>
+      </div>
+      
     </div>
   );
 };

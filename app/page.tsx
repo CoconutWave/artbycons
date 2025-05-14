@@ -15,22 +15,27 @@ export default function Home() {
     },
     {
       title: "Ko-Fi",
-      desc: "Also available for artwork commissions on Ko-Fi. Accepts any forms of support.",
+      desc: "Also available for artwork commissions on Ko-Fi. Terms and Conditions apply.",
       link: "https://ko-fi.com/artbycons",
     },
   ];
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between">
-      <div className="w-full relative bg-rose-800 h-80 drop-shadow-xl">
-        <Image
-          src={"/arts/banner.jpg"}
-          fill
-          style={{ objectFit: "cover" }}
-          alt="banner"
-        ></Image>
-        {/* <div className="absolute bg-slate-800 opacity-40 inset-0"></div> */}
+    <main className="flex flex-col items-center justify-between">
+      
+      <div className="bg-blue-300 min-h-96 w-full place-content-center relative">
+        <div className=" m-auto bg-fuchsia-400 overflow-hidden">
+          <Image
+            src={"/arts/banner.jpg"}
+            fill
+            className="m-auto w-full h-full"
+            style={{ objectFit: "cover" }}
+            alt="banner"
+          ></Image>
+          asdasd
+        </div>
       </div>
-      <div className="container relative h-80">
+
+      {/* <div className="container relative h-80">
         <div className="absolute inset-0 flex justify-center items-center">
           <div className="text-white drop-shadow-xl">
             <div className="text-5xl text-center">i&apos;m an</div>
@@ -40,8 +45,8 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
-      <div className="w-full bg-fuchsia-300 block md:flex text-black">
+      </div> */}
+      <div className="w-full bg-gradient-to-r from-slate-800 to-purple-950 block md:flex text-white">
         <div className="relative bg-cyan-600 w-full md:w-1/2 h-96">
           <Image
             src={
@@ -61,15 +66,26 @@ export default function Home() {
           </div>
           <Link
             href={"/portfolio"}
-            className="bg-slate-800 text-white p-3 rounded-xl"
+            className="bg-fuchsia-300 text-black p-3 rounded-xl"
           >
             Check my portfolio
           </Link>
         </div>
       </div>
-      <div className="w-full bg-slate-900 block md:flex">
+      <div className="w-full bg-gradient-to-r from-blue-950 to-purple-900 block md:flex h-96">
+        <div className="relative bg-cyan-600 w-full md:w-11/12 h-full block md:hidden">
+          <Image
+            src={
+              "https://d.furaffinity.net/art/pwnagespartan/1658754890/1658754890.pwnagespartan_commissionharrylime3_update.jpg"
+            }
+            fill
+            objectFit="cover"
+            objectPosition="50% 10%"
+            alt="sample"
+          ></Image>
+        </div>
         <div className="container p-10 mx-auto text-center md:text-left">
-          <div className="text-3xl mb-5">
+          <div className="text-3xl mb-10">
             I&apos;m available for various types of art commission. Ranging from
             simple sketch illustration to fully-rendered artwork. Additional
             options are available.
@@ -81,7 +97,7 @@ export default function Home() {
             Commission pricing
           </Link>
         </div>
-        <div className="relative bg-cyan-600 w-full md:w-11/12 h-96">
+        <div className="relative bg-cyan-600 w-full md:w-11/12 h-full hidden md:block">
           <Image
             src={
               "https://d.furaffinity.net/art/pwnagespartan/1658754890/1658754890.pwnagespartan_commissionharrylime3_update.jpg"
@@ -100,7 +116,7 @@ export default function Home() {
             <Link
               key={index}
               href={item.link}
-              className="block m-3 max-w-sm min-h-48 p-6 hover:scale-105 transition transition-transform bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
+              className="block m-3 max-w-sm min-h-48 p-6 hover:scale-105 transition-transform bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
             >
               <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                 {item.title}

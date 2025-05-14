@@ -3,8 +3,8 @@ import React from 'react'
 
 const Footer = () => {
     return (
-        <div className='w-100 bg-gray-900 flex'>
-            <div className="container items-center p-10 flex">
+        <footer className='bg-gray-900 flex'>
+            <div className="container w-full items-center p-10 flex">
                 2024. Art by Cons.
             </div>
             <div className="container p-10">
@@ -17,7 +17,7 @@ const Footer = () => {
                     </li>
                 </ul>
             </div>
-        </div>
+        </footer>
     )
 }
 
