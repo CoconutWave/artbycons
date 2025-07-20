@@ -60,7 +60,7 @@ const Page = () => {
       </div>
       <div className="w-full p-5">
         <h1 className="text-2xl mb-2">Contact me</h1>
-        <div className="grid xs:block grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+        <div className="block sm:grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
           {contacts.map((item, index) => (
             <Link
               href={item.url}

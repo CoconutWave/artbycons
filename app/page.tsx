@@ -58,11 +58,10 @@ export default function Home() {
             alt="sample"
           ></Image>
         </div>
-        <div className="container p-10 mx-auto text-center md:text-left">
-          <div className="text-3xl mb-5">
-            I make anthropomorphic character illustrations. Capable to draw
-            various animals within my interest. I&apos;ve made a lot of
-            illustrations.
+        <div className="container p-20 mx-auto text-left">
+          <div className="text-3xl mb-10 md:mb-5">
+            I make anthropomorphic animal and cartoon character illustrations. Capable to draw
+            various animals within my interest. I&apos;ve made illustrations for online clients.
           </div>
           <Link
             href={"/portfolio"}
@@ -72,8 +71,8 @@ export default function Home() {
           </Link>
         </div>
       </div>
-      <div className="w-full bg-gradient-to-r from-blue-950 to-purple-900 block md:flex h-96">
-        <div className="relative bg-cyan-600 w-full md:w-11/12 h-full block md:hidden">
+      <div className="w-full bg-gradient-to-r from-blue-950 to-purple-900 flex flex-col md:flex-row md:h-96">
+        <div className="relative bg-cyan-600 w-full md:w-11/12 h-96 md:h-full block md:hidden">
           <Image
             src={
               "https://d.furaffinity.net/art/pwnagespartan/1658754890/1658754890.pwnagespartan_commissionharrylime3_update.jpg"

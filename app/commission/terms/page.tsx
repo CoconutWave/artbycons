@@ -21,16 +21,18 @@ const Page = () => {
     ],
   };
   return (
-    <div className="container px-20 py-5">
+    <div className="w-full px-20 py-5">
       <div className="container py-5 w-52">
         <a href="/commission">
           <div className="text-xl">back</div>
         </a>
       </div>
-      <div className="p-5">
-        <div className="text-3xl text-center">
+      <div className="m-5">
+        <div className="text-3xl text-center font-semibold">
           art by Cons&apos; commission terms and conditions
         </div>
+      </div>
+      <div className="m-5">
         <div className="text-2xl">Terms</div>
         <div className="text-xl container">
           <ul className="list-decimal">
@@ -40,7 +42,7 @@ const Page = () => {
           </ul>
         </div>
       </div>
-      <div className="p-5 hover:scale-105 transition hover:translate-x-10">
+      <div className="m-5 hover:scale-105 transition hover:translate-x-10">
         <div className="text-2xl">What i accept</div>
         <div className="text-xl container">
           <ul className="list-decimal">
@@ -50,7 +52,7 @@ const Page = () => {
           </ul>
         </div>
       </div>
-      <div className="p-5 hover:scale-105 transition hover:translate-x-10">
+      <div className="m-5 hover:scale-105 transition hover:translate-x-10">
         <div className="text-2xl text-red-300">What i DO NOT accept</div>
         <div className="text-xl container">
           <ul className="list-decimal">

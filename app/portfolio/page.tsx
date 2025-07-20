@@ -5,8 +5,8 @@ const Page = () => {
   const portfolio = [
     {
       title: "Reiko",
-      img: "https://storage.ko-fi.com/cdn/useruploads/display/b406986a-6bf0-4228-afb3-8aa394626feb_reikowithbag.png",
-      desc: "Reiko in her casual wear",
+      img: "https://d.furaffinity.net/art/pwnagespartan/1727280365/1727280365.pwnagespartan_reikosit.png",
+      desc: "Reiko thinking about something",
     },
     {
       title: "Sera",
@@ -32,7 +32,7 @@ const Page = () => {
   return (
     <div className="w-full px-10 md:px-20 py-5">
       <div className="w-100 text-center justify-center mb-10">
-        <h1 className="text-3xl">Portfolio</h1>
+        <h1 className="text-3xl font-bold">Portfolio</h1>
         <p>Personal and commissioned works.</p>
       </div>
 

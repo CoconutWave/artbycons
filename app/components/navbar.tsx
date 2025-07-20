@@ -77,16 +77,7 @@ const Navbar = () => {
             </div>
 
             <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-              <div className="flex flex-shrink-0 items-center">
-                <Image
-                  src={
-                    "https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-                  }
-                  width={30}
-                  height={30}
-                  alt="navbar"
-                ></Image>
-              </div>
+              <div className="mx-3 font-bold text-xl flex items-center">art by Cons</div>
               <div className="hidden sm:ml-6 sm:block">
                 <div className="flex space-x-4">
                   {routes.map((item, index) => {

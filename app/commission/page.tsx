@@ -52,16 +52,16 @@ const Page = () => {
   return (
     <div className="w-full px-10 md:px-20 py-5">
       <div className="w-100 text-center justify-center mb-10">
-        <h1 className="text-3xl">Commission</h1>
+        <h1 className="text-3xl font-bold">Commission</h1>
         <p>Multiple art commission varieties available.</p>
       </div>
 
       <div className="p-5">
-        <div className="text-3xl">Commission Type</div>
-        <div className="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 xs:grid-cols-1 w-full bgcol">
+        <div className="text-3xl mb-3">Commission Type</div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 w-full">
           {commissions.map((item, index) => (
             <div
-              className="overflow-hidden m-3 max-w-sm bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-700 hover:scale-105 transition dark:bg-gray-800 dark:border-gray-700"
+              className="overflow-hidden mx-auto max-w-sm bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-700 hover:scale-105 transition dark:bg-gray-800 dark:border-gray-700"
               style={{ width: "300px", height: "512px" }}
               key={index}
             >
@@ -95,7 +95,7 @@ const Page = () => {
           ))}
         </div>
         <div className="text-3xl mt-5">Additional Stuffs</div>
-        <div className="container grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
           {additionalFeatures.map((item, index) => (
             <div
               className="overflow-hidden flex m-3 max-w-sm bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-700 hover:scale-105 transition dark:bg-gray-800 dark:border-gray-700"
