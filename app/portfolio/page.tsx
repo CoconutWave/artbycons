@@ -36,7 +36,7 @@ const Page = () => {
         <p>Personal and commissioned works.</p>
       </div>
 
-      <div className="grid xs:block sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 ">
+      <div className="grid xs:block md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 ">
         {portfolio.map((item, index) => {
           return (
             <div

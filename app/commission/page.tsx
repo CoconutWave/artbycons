@@ -56,22 +56,22 @@ const Page = () => {
         <p>Multiple art commission varieties available.</p>
       </div>
 
-      <div className="p-5">
+      <div className="m-5">
         <div className="text-3xl mb-3">Commission Type</div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 w-full">
+        <div className="grid xs:block md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10">
           {commissions.map((item, index) => (
             <div
-              className="overflow-hidden mx-auto max-w-sm bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-700 hover:scale-105 transition dark:bg-gray-800 dark:border-gray-700"
-              style={{ width: "300px", height: "512px" }}
+              className="overflow-hidden mx-auto max-w-sm hover:scale-105 transition bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-800 dark:bg-gray-900 dark:border-gray-700"
               key={index}
             >
               {/* <Link href="#" className="">
               <Image src={item.img} height={300} width={300} alt="comm"></Image>
             </Link> */}
-              <div className="relative w-full h-96 bg-slate-500">
-                <Image src={item.img} fill objectFit="cover" alt="comm"></Image>
-              </div>
-              <div className="px-5 py-5">
+              
+              <a href="#">
+                <Image src={item.img} width={700} height={700} alt="artimage"/>
+              </a>
+              <div className="p-5">
                 <a href="#">
                   <h5 className="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
                     {item.title}
@@ -98,7 +98,7 @@ const Page = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
           {additionalFeatures.map((item, index) => (
             <div
-              className="overflow-hidden flex m-3 max-w-sm bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-700 hover:scale-105 transition dark:bg-gray-800 dark:border-gray-700"
+              className="overflow-hidden flex m-3 max-w-sm bg-white border border-gray-200 rounded-lg shadow hover:scale-105 transition dark:bg-gray-900 dark:border-gray-700 hover:bg-gray-800"
               key={index}
             >
               <div className="py-10 pl-5 text-3xl">{item.icon}</div>
