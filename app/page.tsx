@@ -22,7 +22,7 @@ export default function Home() {
   return (
     <main className="flex flex-col items-center justify-between">
       
-      <div className="bg-blue-300 min-h-96 w-full place-content-center relative">
+      <div className="bg-blue-300 min-h-80 md:h-96 w-full place-content-center relative">
         <div className=" m-auto bg-fuchsia-400 overflow-hidden">
           <Image
             src={"/arts/banner.jpg"}
@@ -31,7 +31,6 @@ export default function Home() {
             style={{ objectFit: "cover" }}
             alt="banner"
           ></Image>
-          asdasd
         </div>
       </div>
 
@@ -47,19 +46,8 @@ export default function Home() {
         </div>
       </div> */}
       <div className="w-full bg-gradient-to-r from-slate-800 to-purple-950 block md:flex text-white">
-        <div className="relative bg-cyan-600 w-full md:w-1/2 h-96">
-          <Image
-            src={
-              "https://d.furaffinity.net/art/pwnagespartan/1683901045/1683890787.pwnagespartan_seradoingchores_update.png"
-            }
-            fill
-            objectFit="cover"
-            objectPosition="50% 10%"
-            alt="sample"
-          ></Image>
-        </div>
-        <div className="container p-20 mx-auto text-left">
-          <div className="text-3xl mb-10 md:mb-5">
+        <div className="container p-20 mx-auto text-center md:text-left">
+          <div className="text-xl md:text-3xl mb-10 md:mb-5">
             I make anthropomorphic animal and cartoon character illustrations. Capable to draw
             various animals within my interest. I&apos;ve made illustrations for online clients.
           </div>
@@ -70,9 +58,20 @@ export default function Home() {
             Check my portfolio
           </Link>
         </div>
+        <div className="relative bg-cyan-600 w-full md:w-1/2 h-96">
+          <Image
+            src={
+              "https://d.furaffinity.net/art/pwnagespartan/1740411197/1740411197.pwnagespartan_serachloemarblescountryside.png"
+            }
+            fill
+            objectFit="cover"
+            objectPosition="50% 10%"
+            alt="sample"
+          ></Image>
+        </div>    
       </div>
       <div className="w-full bg-gradient-to-r from-blue-950 to-purple-900 flex flex-col md:flex-row md:h-96">
-        <div className="relative bg-cyan-600 w-full md:w-11/12 h-96 md:h-full block md:hidden">
+        <div className="relative bg-cyan-600 w-full md:w-11/12 h-96 md:h-full hidden md:block">
           <Image
             src={
               "https://d.furaffinity.net/art/pwnagespartan/1658754890/1658754890.pwnagespartan_commissionharrylime3_update.jpg"
@@ -84,7 +83,7 @@ export default function Home() {
           ></Image>
         </div>
         <div className="container p-10 mx-auto text-center md:text-left">
-          <div className="text-3xl mb-10">
+          <div className="text-xl md:text-3xl mb-10">
             I&apos;m available for various types of art commission. Ranging from
             simple sketch illustration to fully-rendered artwork. Additional
             options are available.
@@ -96,7 +95,7 @@ export default function Home() {
             Commission pricing
           </Link>
         </div>
-        <div className="relative bg-cyan-600 w-full md:w-11/12 h-full hidden md:block">
+        <div className="relative bg-cyan-600 w-full md:w-11/12 h-64 md:hidden">
           <Image
             src={
               "https://d.furaffinity.net/art/pwnagespartan/1658754890/1658754890.pwnagespartan_commissionharrylime3_update.jpg"
@@ -109,13 +108,13 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="w-full bg-gradient-to-r from-violet-600 to-fuchsia-200 p-20">
+      <div className="w-full p-20">
         <div className="card justify-around grid md:grid-cols-3 sm:grid-cols-2 xs:grid-cols-1">
           {cardDisplay.map((item, index) => (
             <Link
               key={index}
               href={item.link}
-              className="block m-3 max-w-sm min-h-48 p-6 hover:scale-105 transition-transform bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
+              className="block m-3 max-w-sm min-h-48 p-6 hover:scale-105 transition-transform bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-900 dark:border-gray-700 dark:hover:bg-gray-700"
             >
               <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                 {item.title}

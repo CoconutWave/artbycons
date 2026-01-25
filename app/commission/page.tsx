@@ -26,7 +26,7 @@ const Page = () => {
     },
     {
       title: "Rendered",
-      img: "https://storage.ko-fi.com/cdn/useruploads/display/b406986a-6bf0-4228-afb3-8aa394626feb_reikowithbag.png",
+      img: "https://d.furaffinity.net/art/pwnagespartan/1762610532/1762610532.pwnagespartan_mariesummerswimsuit.png",
       desc: "Fully-rendered artwork",
       price: 70,
     },

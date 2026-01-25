@@ -5,8 +5,8 @@ const Page = () => {
   const portfolio = [
     {
       title: "Reiko",
-      img: "https://d.furaffinity.net/art/pwnagespartan/1727280365/1727280365.pwnagespartan_reikosit.png",
-      desc: "Reiko thinking about something",
+      img: "https://d.furaffinity.net/art/pwnagespartan/1766842464/1766842464.pwnagespartan_reikosimpleswimmingapparel.png",
+      desc: "Modelling is not her usual thing",
     },
     {
       title: "Sera",
@@ -15,8 +15,8 @@ const Page = () => {
     },
     {
       title: "Zhen",
-      img: "https://d.furaffinity.net/art/pwnagespartan/1713181296/1713181296.pwnagespartan_zhenskadoosh.png",
-      desc: "The new guardian of the Valley of Peace",
+      img: "https://d.furaffinity.net/art/pwnagespartan/1725466373/1725466373.pwnagespartan_zhenpayday.png",
+      desc: "The thief gets her paycheck",
     },
     {
       title: "Konoha",
@@ -26,7 +26,17 @@ const Page = () => {
     {
       title: "Diane",
       img: "https://d.furaffinity.net/art/pwnagespartan/1730821373/1730821373.pwnagespartan_dianefoxington.png",
-      desc: "The thief in disguise"
+      desc: "The low-profile bandit"
+    },
+    {
+      title: "Satomi-san",
+      img: "https://d.furaffinity.net/art/pwnagespartan/1754201535/1754201535.pwnagespartan_satomistyle.png",
+      desc: "High-class bully"
+    },
+    {
+      title: "Marie",
+      img: "https://d.furaffinity.net/art/pwnagespartan/1762610532/1762610532.pwnagespartan_mariesummerswimsuit.png",
+      desc: "Elegant model"
     }
   ];
   return (
@@ -36,7 +46,7 @@ const Page = () => {
         <p>Personal and commissioned works.</p>
       </div>
 
-      <div className="grid xs:block md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 ">
+      <div className="grid xs:block md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 m-10">
         {portfolio.map((item, index) => {
           return (
             <div
