@@ -23,9 +23,9 @@ export default function Home() {
     <main className="flex flex-col items-center justify-between">
       
       <div className="bg-blue-300 min-h-80 md:h-96 w-full place-content-center relative">
-        <div className=" m-auto bg-fuchsia-400 overflow-hidden">
+        <div className="m-auto bg-fuchsia-400 overflow-hidden">
           <Image
-            src={"/arts/banner.jpg"}
+            src={"/arts/banner2.png"}
             fill
             className="m-auto w-full h-full"
             style={{ objectFit: "cover" }}
@@ -64,8 +64,8 @@ export default function Home() {
               "https://d.furaffinity.net/art/pwnagespartan/1740411197/1740411197.pwnagespartan_serachloemarblescountryside.png"
             }
             fill
-            objectFit="cover"
-            objectPosition="50% 10%"
+            sizes="(max-width: 710px) 100vw"
+            className="object-cover object-[50%_20%]"
             alt="sample"
           ></Image>
         </div>    
@@ -77,8 +77,8 @@ export default function Home() {
               "https://d.furaffinity.net/art/pwnagespartan/1658754890/1658754890.pwnagespartan_commissionharrylime3_update.jpg"
             }
             fill
-            objectFit="cover"
-            objectPosition="50% 10%"
+            sizes="(max-width: 710px) 100vw"
+            className="object-cover object-[50%_10%]"
             alt="sample"
           ></Image>
         </div>
@@ -101,8 +101,8 @@ export default function Home() {
               "https://d.furaffinity.net/art/pwnagespartan/1658754890/1658754890.pwnagespartan_commissionharrylime3_update.jpg"
             }
             fill
-            objectFit="cover"
-            objectPosition="50% 10%"
+            sizes="(max-width: 710px) 100vw"
+            className="object-cover object-[50%_10%]"
             alt="sample"
           ></Image>
         </div>
