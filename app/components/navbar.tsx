@@ -84,10 +84,10 @@ const Navbar = () => {
                     var navClassName = "";
                     if (currentPathname == item.url) {
                       navClassName =
-                        "bg-gray-950 text-white rounded-md px-3 py-2 text-sm font-medium";
+                        "bg-gray-950 text-white rounded-md px-5 py-3 text-sm font-medium";
                     } else {
                       navClassName =
-                        "text-gray-300 rounded-md transition-colors px-3 py-2 text-sm font-medium hover:bg-gray-950";
+                        "text-gray-300 rounded-md transition-colors px-5 py-3 text-sm font-medium hover:bg-gray-950";
                     }
                     return (
                       <a href={item.url} className={navClassName} key={index}>

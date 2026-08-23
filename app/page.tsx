@@ -5,17 +5,17 @@ export default function Home() {
   const cardDisplay = [
     {
       title: "Artwork",
-      desc: "I make anthro-themed artworks, character designs, illustrations, and more.",
+      desc: "Creates anthro-themed artworks, character designs, illustrations, and more.",
       link: "/portfolio",
     },
     {
       title: "Commission",
-      desc: "Accepts various kinds of art commissions. To book one, please contact through available social media.",
+      desc: "Accepts various kinds of art commissions. To book one, please kindly contact on available social media.",
       link: "/commission",
     },
     {
       title: "Ko-Fi",
-      desc: "Also available for artwork commissions on Ko-Fi. Terms and Conditions apply.",
+      desc: "Also available for artwork commissions on Ko-Fi.",
       link: "https://ko-fi.com/artbycons",
     },
   ];
@@ -53,7 +53,7 @@ export default function Home() {
           </div>
           <Link
             href={"/portfolio"}
-            className="bg-fuchsia-300 text-black p-3 rounded-xl"
+            className="bg-fuchsia-300 text-black p-3 rounded-xl hover:bg-violet-300 transition-colors"
           >
             Check my portfolio
           </Link>
@@ -90,7 +90,7 @@ export default function Home() {
           </div>
           <Link
             href={"/commission"}
-            className="bg-fuchsia-300 text-black p-3 rounded-xl"
+            className="bg-fuchsia-300 text-black p-3 rounded-xl hover:bg-violet-300 transition-colors"
           >
             Commission pricing
           </Link>
@@ -109,17 +109,17 @@ export default function Home() {
       </div>
 
       <div className="w-full p-20">
-        <div className="card justify-around grid md:grid-cols-3 sm:grid-cols-2 xs:grid-cols-1">
+        <div className="card grid md:grid-cols-3 sm:grid-cols-2 xs:grid-cols-1">
           {cardDisplay.map((item, index) => (
             <Link
               key={index}
               href={item.link}
-              className="block m-3 max-w-sm min-h-48 p-6 hover:scale-105 transition-transform bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-900 dark:border-gray-700 dark:hover:bg-gray-700"
+              className="block my-3 md:mx-20 sm:mx-3 min-h-48 p-6 hover:scale-105 transition-transform bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-900 dark:border-gray-700 dark:hover:bg-gray-800"
             >
               <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                 {item.title}
               </h5>
-              <p className="font-normal text-gray-700 dark:text-gray-400">
+              <p className="font-normal md:text-lg sm:text-base text-gray-700 dark:text-gray-400">
                 {item.desc}
               </p>
             </Link>
